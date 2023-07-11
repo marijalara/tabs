@@ -20,8 +20,8 @@ const App = () => {
     return (
         <div>
             <Header />
-            {jobs.map((job) => (
-                <Jobs job={job}/>
+            {jobs.map((job, index) => (
+                <Jobs job={job} index={index}/>
             ))}
         </div>
     )

@@ -36,7 +36,7 @@ header {
   border-color: transparent;
   background: transparent;
   text-transform: capitalize;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1;
   margin: 0 0.5rem;
   outline-color: blue;
@@ -46,17 +46,25 @@ header {
   cursor: pointer;
 }
 .btn:hover {
-  color: aqua;
+  color: rgb(120, 228, 228);
   box-shadow: 0 2px aqua;
 }
-h3 {
-  text-align: center;
+.active-btn {
+  color: rgb(29, 178, 178);
+  box-shadow: 0 2px lightgrey;
 }
-h4 {
-  background: gray;
+.info h3 {
+  text-align: left;
+}
+.info h4 {
+  background: rgb(216, 212, 212);
   border-radius: 0.25rem;
   display: inline-block;
   padding: 0.375rem 0.75rem;
+}
+.dates {
+  letter-spacing: 0.1rem;
+  color: grey;
 }
 .description {
   display: grid;
@@ -64,7 +72,26 @@ h4 {
   column-gap: 2rem;
   align-items: center;
 }
+.description p {
+  margin-bottom: 0;
+  color: grey;
+}
 .icon {
   color: aqua;
   letter-spacing: 2px;
+}
+.button {
+  text-transform: uppercase;
+  background: blue;
+  color: white;
+  padding: 0.85rem 0.75rem;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 0.87rem;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 4px;
 }
