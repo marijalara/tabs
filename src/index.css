@@ -9,10 +9,161 @@ body {
   margin: 5rem auto;
   max-width: 1170px;
 }
-header {
-  text-align: center;
+.header {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 30px;
+  display: inline-block;
+  align-items: left;
+  color:  rgb(18, 71, 88);
+}
+.navMenu {
+  display: inline-flex;
+  align-items: center;
+  width: 70vw;
+}
+.navMenu li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  font-size: 20px;
+}
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgb(71, 135, 156);
+  margin-left: auto;
+  margin-right: auto;
+}
+.navLink {
+  text-decoration: none;
+}
+.navMenu li .navLink:hover {
+  color: rgb(35, 109, 109);
+  box-shadow: 0 2px rgb(35, 109, 109);
+}
+.text {
+  text-transform: capitalize;
+}
+.button {
+  text-transform: uppercase;
   padding: 10px;
-  font-size: 2.5rem;
+  background-color: rgb(63, 63, 146);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.head {
+  margin-left: 40px;
+  padding: 15px;
+}
+.container h4 {
+  text-transform: capitalize;
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+}
+.container {
+  width: 500px;
+  padding: 10px;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+input {
+  margin-left: 5px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  background-color: lightgray;
+  color: black;
+  font-size: 1rem;
+}
+.button1 {
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(56, 162, 197);
+  color: azure;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 16px;
+}
+.submit {
+  text-align: center;
+}
+.head1 {
+  text-transform: capitalize;
+  margin-left: 40px;
+  padding: 15px;
+  font-size: 25px;
+}
+.underline1 {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgb(71, 135, 156);
+}
+.paragraph {
+  margin: 5px;
+}
+.head2 {
+  text-transform: capitalize;
+  margin-left: 40px;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: center;
+}
+.underline2 {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgb(71, 135, 156);
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  width: 350px;
+  height: 250px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.typo {
+  text-align: center;
+}
+.underline3 {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgb(71, 135, 156);
+  margin-left: auto;
+  margin-right: auto;
+}
+.body2 {
+  padding: 20px;
+  text-align: center;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+@media screen and (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+.cards-container .card:hover {
+  background-color: aqua;
+}
+.head3 {
+  text-align: center;
+  padding: 15px;
+  font-size: 2rem;
 }
 .underline {
   width: 5rem;
@@ -26,7 +177,7 @@ header {
   margin: 0 auto;
   max-width: 1170px;
 }
-.container {
+.container1 {
   display: flex;
   flex-direction: row;
   margin-bottom: 4rem;
@@ -53,9 +204,6 @@ header {
   color: rgb(29, 178, 178);
   box-shadow: 0 2px lightgrey;
 }
-.info h3 {
-  text-align: left;
-}
 .info h4 {
   background: rgb(216, 212, 212);
   border-radius: 0.25rem;
@@ -80,7 +228,7 @@ header {
   color: aqua;
   letter-spacing: 2px;
 }
-.button {
+.button2 {
   text-transform: uppercase;
   background: blue;
   color: white;

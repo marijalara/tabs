@@ -1,29 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Navbar from './Navbar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 import Header from './Header';
-import axios from 'axios';
-import Jobs from './Jobs';
-
-const url='https://course-api.com/react-tabs-project'
 
 const App = () => {
-    const [jobs, setJobs]=useState([])
-
-    const fetchJobs=async () => {
-        const response= await axios.get(url)
-        const jobsData=response.data
-        setJobs(jobsData)
-    }
-
-    useEffect(() => {
-        fetchJobs()
-    },[])
     return (
-        <div>
-            <Header />
-            {jobs.map((job, index) => (
-                <Jobs job={job} index={index}/>
-            ))}
-        </div>
+      <Router>
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/about' exact element={<About />} />
+          <Route path='/projects' exact element={<Projects />} />
+          <Route path='/contact' exact element={<Contact />} />
+        </Routes>
+      </Router>
     )
 }
 
