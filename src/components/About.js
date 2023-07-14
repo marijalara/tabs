@@ -2,7 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div>
+        <div className='about-container'>
+            <div className='paragraph-container'>
             <header className='head1'>
                 about me
                 <div className='underline1'></div>
@@ -17,6 +18,15 @@ const About = () => {
                 8-bit mustache. Pickled next level vaporware, brooklyn af sriracha hoodie try-hard flannel slow-carb raw
                 denim.
             </p>
+            <div className='about-stack'>
+                <span>html</span>
+                <span>css</span>
+                <span>javascript</span>
+                <span>react.js</span>
+                <span>node.js</span>
+                <span>gatsby.js</span>
+            </div>
+            </div>
         </div>
     )
 }

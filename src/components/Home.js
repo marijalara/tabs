@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Cards from './Cards';
 import Jobs from './Jobs';
 import axios from 'axios';
+import Header from './Header';
 
 const url='https://course-api.com/react-tabs-project'
 
@@ -19,6 +20,7 @@ const Home = () => {
 
     return (
         <div>
+            <Header />
             <header className='head2'>
                 Services
                 <div className='underline2'></div>

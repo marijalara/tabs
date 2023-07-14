@@ -67,7 +67,7 @@ body {
   width: 500px;
   padding: 10px;
   background-color: white;
-  margin: auto;
+  margin: 50px auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form {
@@ -109,9 +109,6 @@ input {
   width: 5rem;
   height: 0.25rem;
   background-color: rgb(71, 135, 156);
-}
-.paragraph {
-  margin: 5px;
 }
 .head2 {
   text-transform: capitalize;
@@ -242,4 +239,73 @@ input {
   margin: 0 auto;
   margin-top: 2rem;
   border-radius: 4px;
+}
+.paragraph {
+  margin-left: 40px;
+  padding: 15px;
+
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+}
+.paragraph-container {
+  max-width: 600px;
+  width: 100%;
+}
+@media screen and (min-width: 668px) {
+  .about-container {
+    justify-content: flex-end;
+  }
+  .paragraph-container {
+    margin-right: 166px;
+  }
+}
+.about-stack {
+  display: flex;
+  justify-content: space-between;
+}
+.about-stack span {
+  display: inline-block;
+  background-color: gray;
+  text-transform: uppercase;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 40px;
+}
+.head4 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.underline4 {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: rgb(71, 135, 156);
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  width: 600px;
+  height: 300px;
+  margin-top: 20px;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.title {
+  text-transform: uppercase;
 }
