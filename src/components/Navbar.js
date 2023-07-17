@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    
     return (
-        <div>
+        <nav>
             <ul className='navMenu'>
             <header className='header'>
                 WebDev
@@ -22,7 +23,7 @@ const Navbar = () => {
                 <Link to='/contact' className='navLink'>Contact</Link>
             </li>
             </ul>
-        </div>
+        </nav>
     )
 }
 

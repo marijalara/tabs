@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/projects' exact element={<Projects />} />
           <Route path='/contact' exact element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     )
 }
