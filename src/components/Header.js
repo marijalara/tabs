@@ -8,13 +8,16 @@ const Header = () => {
         navigate(path)
     }
     return (
-        <header className='head'>
-            I'm John
+        <div>
+            <header className='head'>
+                I'm John
+            </header>
             <p className='text'>freelance web and mobile UI/UX designer</p>
             <button className='button' onClick={routeChange}>
                 contact me
             </button>
-        </header>
+        
+        </div>
     )
 }
 

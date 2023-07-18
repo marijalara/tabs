@@ -1,16 +1,25 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
+    const [clicked, setClicked]=useState(false)
+    
+    const handleClick=() => {
+        setClicked(!clicked)
+    }
     
     return (
-        <nav>
-            <ul className='navMenu'>
+    <nav >
             <header className='header'>
                 WebDev
                 <div className='underline'></div>
             </header>
-            <li className='item'>
+                
+            <div>
+            <ul className={clicked ? 'navMenu active' : 'navMenu'}>
+            <li>
                 <Link to='/' className='navLink'>Home</Link>
             </li>
             <li>
@@ -23,6 +32,11 @@ const Navbar = () => {
                 <Link to='/contact' className='navLink'>Contact</Link>
             </li>
             </ul>
+            </div>
+            <div className='mobile' onClick={handleClick}>
+                <i>{clicked ? <AiOutlineClose /> : <GiHamburgerMenu />}</i>
+            </div>
+        
         </nav>
     )
 }
