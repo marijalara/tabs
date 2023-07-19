@@ -21,11 +21,13 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <div className='service-container'>
             <header className='head2'>
                 Services
                 <div className='underline2'></div>
             </header>
             <Cards />
+            </div>
             <header className='head3'>
                 Expierence
                 <div className='underline'></div>

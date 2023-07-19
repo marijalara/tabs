@@ -8,7 +8,7 @@ const Header = () => {
         navigate(path)
     }
     return (
-        <div>
+        <div className='header-container'>
             <header className='head'>
                 I'm John
             </header>

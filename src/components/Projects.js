@@ -21,7 +21,7 @@ const Project = () => {
                             <br />
                             html&css
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" className='parag'>
                             Four loko heirloom 90's, mustache readymade microdosing lumbersexual
                             vexillologist synth. Sartorial shabby chic cloud bread, green juice meditation 
                             bitters before they sold out brunch. Four dollar toast retro pitchfork 
@@ -41,7 +41,7 @@ const Project = () => {
                 <Card sx={{ maxWidth: 750 }} >
                     <CardMedia 
                         sx={{ height: 260 }}
-                        image='https://tse3.mm.bing.net/th?id=OIP.coTJGIOyT-hi3-sB53DoEgHaE8&pid=Api&P=0&h=180'
+                        image='https://www.freelogoservices.com/blog/wp-content/uploads/laptop-header-picture-id910806154.jpg'
                         title='ANGULAR'
                     />
                     <CardContent>
@@ -50,7 +50,7 @@ const Project = () => {
                             <br />
                             angular project
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" className='parag'>
                             I'm baby salvia lomo yuccie, vinyl seitan XOXO tousled bicycle rights 
                             slow-carb occupy taiyaki microdosing brunch. Photo booth slow-carb health 
                             goth kickstarter cardigan. Roof party pour-over swag pork belly glossier 
@@ -66,7 +66,7 @@ const Project = () => {
                 <Card sx={{ maxWidth: 750 }} >
                     <CardMedia 
                         sx={{ height: 260 }}
-                        image='https://tse2.mm.bing.net/th?id=OIP.jb8nHMxI3ZAHwAa8xH-6LAHaE8&pid=Api&P=0&h=180'
+                        image='https://www.traverse-events.com/blog/wp-content/uploads/2018/09/laptop-and-coffee-min-1024x683.jpg'
                         title='REACT'
                     />
                     <CardContent>
@@ -75,7 +75,7 @@ const Project = () => {
                             <br />
                             react project
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" className='parag'>
                             Tumblr intelligentsia brunch, heirloom crucifix tousled butcher poke fanny 
                             pack lumbersexual forage. Keytar portland lyft mixtape fixie tofu vice 
                             blue bottle. Ethical waistcoat flannel vape banjo you probably haven't 
@@ -101,7 +101,7 @@ const Project = () => {
                             <br />
                             gatsby project
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" className='parag'>
                             Vaporware YOLO kinfolk iceland. Tbh swag fashion axe brooklyn literally 
                             +1 shoreditch. Letterpress heirloom ethical gluten-free disrupt. VHS post-ironic 
                             godard, tumeric ugh next level farm-to-table tilde. Jean shorts next level 

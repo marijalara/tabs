@@ -1,10 +1,14 @@
 import React from 'react';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 
 const Cards = () => {
+    const isMobile=window.innerWidth <=600
     return (
-        <div className='cards-container'>
+        <div className={`cards-container ${isMobile ? 'mobilee' : 'desktop'}`}>
         <Card className='card'>
+        <CardMedia className='media'
+            sx={{height: 80, width: 120}}
+            image='https://clipground.com/images/web-developer-logo-4.png'/>
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
                 Web Development
@@ -19,6 +23,10 @@ const Cards = () => {
         </CardContent>
         </Card>
         <Card className='card'>
+        <CardMedia className='media1'
+            sx={{height: 70, width: 70}}
+            image='https://cdn.pixabay.com/photo/2015/07/06/01/46/diamond-832926_960_720.png'
+        />
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
                 App Design
@@ -33,6 +41,10 @@ const Cards = () => {
         </CardContent>
         </Card>
         <Card className='card'>
+        <CardMedia className='media'
+            sx={{height: 80, width: 80}}
+            image='https://thumbs.dreamstime.com/b/minimalist-modern-logo-simple-work-adjusted-to-suit-your-needs-web-design-logo-template-108974164.jpg'
+        />
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
                 Web Design
