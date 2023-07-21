@@ -32,9 +32,7 @@ const Home = () => {
                 Expierence
                 <div className='underline'></div>
             </header>
-            {jobs.map((job, index) => (
-                <Jobs job={job} index={index}/>
-            ))}
+            {jobs.length > 0 && <Jobs jobs={jobs} />}
         </div>
     )
 }

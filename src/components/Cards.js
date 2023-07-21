@@ -41,7 +41,7 @@ const Cards = () => {
         </CardContent>
         </Card>
         <Card className='card'>
-        <CardMedia className='media'
+        <CardMedia className='media2'
             sx={{height: 80, width: 80}}
             image='https://thumbs.dreamstime.com/b/minimalist-modern-logo-simple-work-adjusted-to-suit-your-needs-web-design-logo-template-108974164.jpg'
         />

@@ -19,7 +19,6 @@ nav {
   justify-content: space-between;
   background-color: white;
   padding: 35px;
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); */
   height: 80px;
   font-size: 1.2rem;
 }
@@ -28,13 +27,24 @@ nav {
   align-items: center;
   justify-content: right;
 }
-.header {
-  padding: 15px;
-  font-size: 30px;
-  display: block;
-  align-items: left;
-  color:  rgb(18, 71, 88);
-} 
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 15px;
+    font-size: 30px;
+    display: block;
+    align-items: left;
+    color:  rgb(18, 71, 88);
+  } 
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 15px;
+    font-size: 30px;
+    display: block;
+    margin-left: 214px;
+    color:  rgb(18, 71, 88);
+  } 
+}
 .navMenu li {
   list-style: none;
   padding: 0 20px;
@@ -96,29 +106,71 @@ nav {
   }
 }
 .header-container {
-  background-color: whitesmoke;
-  height: 300px;
+  background-image: url(https://gatsby-strapi-portfolio-project.netlify.app/static/7f6c6bd3fbb2b7fb0973fdf4a19cb784/92499/hero.webp);
+  height: 780px;
+  background-color: #e0fcff;
+  background-repeat: no-repeat;
 }
-.text {
-  text-transform: capitalize;
-  margin-bottom: 20px;
-  margin-left: 40px;
-  padding: 15px;
+@media screen and (max-width: 767px) {
+  .header-container {
+    background-size: 100%;
+    background-position: 50px 120px;
+  }
+  .head {
+    margin-left: 40px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  .text {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding: 15px;
+  }
+  .button {
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: rgb(63, 63, 146);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-left: 55px;
+  }
 }
-.button {
-  text-transform: uppercase;
-  padding: 15px;
-  background-color: rgb(63, 63, 146);
-  border: none;
-  border-radius: 3px;
-  color: white;
-  margin-left: 55px;
-}
-.head {
-  margin-left: 40px;
-  padding: 15px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+@media screen and (min-width: 768px) {
+  .header-container {
+    background-size: 50%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-position: right 20px top 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .head {
+    font-size: 50px;
+    text-align: center;
+    margin-left: 260px;
+    margin-top: 20px;
+  }
+  .text {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    padding: 15px;
+  }
+  .button {
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: rgb(63, 63, 146);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-left: 260px;
+  }
 }
 .container h4 {
   text-transform: capitalize;
@@ -170,20 +222,19 @@ input {
 .submit {
   text-align: center;
 }
-.head1 {
-  text-transform: capitalize;
-  margin-left: 40px;
-  padding: 15px;
-  font-size: 25px;
+@media screen and (max-width: 767px) {
+  .service-container {
+    background-color: whitesmoke;
+    height: 760px;
+    width: 100%;
+  }
 }
-.underline1 {
-  width: 5rem;
-  height: 0.25rem;
-  background-color: rgb(71, 135, 156);
-}
-.service-container {
-  background-color: whitesmoke;
-  height: 760px;
+@media screen and (min-width: 768px) {
+  .service-container {
+    background-color: whitesmoke;
+    height: 550px;
+    width: 100%;
+  }
 }
 .head2 {
   text-transform: capitalize;
@@ -209,8 +260,12 @@ input {
   margin-top: 20px;
 }
 .media1 {
-  margin-left: 130px;
+  margin-left: 140px;
   margin-top: 30px;
+}
+.media2 {
+  margin-left: 135px;
+  margin-top: 20px;
 }
 .typo {
   text-align: center;
@@ -231,13 +286,26 @@ input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+@media screen and (min-width: 768px) {
+  .cards-container {
+    width: 1200px;
+    height: 360px;
+    margin-left: 130px;
+  }
+}
 @media screen and (max-width: 600px) {
   .cards-container {
     grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
 .cards-container .card:hover {
-  background-color: aqua;
+  background-color: #2caeba;
+  color: white;
+}
+.cards-container .typo:hover {
+  background-color: #2caeba;
+  color: white;
 }
 .head3 {
   text-align: center;
@@ -256,11 +324,27 @@ input {
   margin: 0 auto;
   max-width: 1170px;
 }
-.container1 {
+/* .container1 {
   display: flex;
   flex-direction: row;
   margin-bottom: 4rem;
   flex-wrap: wrap;
+  justify-content: center;
+} */
+@media screen and (max-width: 767px) {
+  .container1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container1 {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
 .btn {
   border-color: transparent;
@@ -269,7 +353,6 @@ input {
   font-size: 1rem;
   line-height: 1;
   margin: 0 0.5rem;
-  outline-color: blue;
   padding: 0.25rem 0;
   letter-spacing: 0.1rem;
   transition: all 0.3s linear;
@@ -330,11 +413,38 @@ input {
   display: flex;
   justify-content: center;
   background-color: whitesmoke;
-  height: 522px;
+  background-image: url(https://gatsby-strapi-portfolio-project.netlify.app/static/7f6c6bd3fbb2b7fb0973fdf4a19cb784/92499/hero.webp);
+  background-repeat: no-repeat;
 }
-.paragraph-container {
-  max-width: 600px;
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .about-container {
+    background-size: 70%;
+    background-position: 80px 50px;
+    flex-direction: column;
+    height: 850px;
+  }
+  .paragraph-container {
+    width: 750px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    background-size: 30%;
+    background-position: left 150px top 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    height: 650px;
+  }
+  .paragraph-container {
+    margin-right: 166px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 750px;
+    height: 500px;
+    margin-top: 100px;
+  }
 }
 @media screen and (min-width: 668px) {
   .about-container {
@@ -344,15 +454,24 @@ input {
     margin-right: 166px;
   }
 }
+.head1 {
+  text-transform: capitalize;
+  margin-left: 40px;
+  padding: 15px;
+  font-size: 35px;
+}
+.underline1 {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgb(71, 135, 156);
+}
 .about-stack {
   display: flex;
 }
 .about-stack span {
-  display: inline-block;
   background-color: gray;
   text-transform: uppercase;
   color: whitesmoke;
-  letter-spacing: 0px;
   font-size: 0.85rem;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;

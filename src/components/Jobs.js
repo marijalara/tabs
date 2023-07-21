@@ -3,11 +3,11 @@ import {FaAngleDoubleRight} from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 
-const Jobs = ({job, index}) => {
-    const [selected, setSelected]=useState(null)
+const Jobs = ({jobs}) => {
+    const [selectedCompany, setSelectedCompany] = useState(jobs[0]?.company || null);
     
-    const toggleCompany=(company) => {
-        setSelected(selected===job.company ? null : company)
+    const toggleCompany = (company) => {
+        setSelectedCompany((prevCompany) => (prevCompany === company ? null : company));
     }
 
     let navigate=useNavigate()
@@ -19,12 +19,19 @@ const Jobs = ({job, index}) => {
         <section className='section'>
         <div className='center'>
         <div className='container1'>
-            <button className={`btn ${selected===job.company ? 'active-btn' : ''}`} key={job.id} onClick={() => toggleCompany(job.company)}>
+        {jobs.map((job) => (
+            <button 
+               className={`btn ${selectedCompany === job.company ? 'active-btn' : ''}`} 
+                key={job.id} 
+                onClick={() => toggleCompany(job.company)}
+            >
                 {job.company}
             </button>
+            ))}
         </div>
-        {selected && (
-        <article className='info'>
+        {jobs.map((job) =>
+         selectedCompany === job.company ? (
+        <article className='info' key={job.id}>
             <h3>{job.title}</h3>
             <h4>{job.company}</h4>
             <p className='dates'>{job.dates}</p>
@@ -38,7 +45,8 @@ const Jobs = ({job, index}) => {
                 more info
             </button>
         </article>
-        )}
+        ): null
+    )}
         </div>
     </section>
     )

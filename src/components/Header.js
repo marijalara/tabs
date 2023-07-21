@@ -16,7 +16,6 @@ const Header = () => {
             <button className='button' onClick={routeChange}>
                 contact me
             </button>
-        
         </div>
     )
 }
