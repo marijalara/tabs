@@ -19,6 +19,7 @@ const Jobs = ({jobs}) => {
         <section className='section'>
         <div className='center'>
         <div className='container1'>
+        <div className='buttons'>
         {jobs.map((job) => (
             <button 
                className={`btn ${selectedCompany === job.company ? 'active-btn' : ''}`} 
@@ -33,8 +34,10 @@ const Jobs = ({jobs}) => {
          selectedCompany === job.company ? (
         <article className='info' key={job.id}>
             <h3>{job.title}</h3>
+            <br />
             <h4>{job.company}</h4>
             <p className='dates'>{job.dates}</p>
+            <br />
             {job.duties.map((duty, index) => (
                 <div key={index} className='description'>
                     <FaAngleDoubleRight className='icon'/>
@@ -47,6 +50,7 @@ const Jobs = ({jobs}) => {
         </article>
         ): null
     )}
+        </div>
         </div>
     </section>
     )

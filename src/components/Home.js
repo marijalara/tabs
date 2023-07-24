@@ -3,6 +3,7 @@ import Cards from './Cards';
 import Jobs from './Jobs';
 import axios from 'axios';
 import Header from './Header';
+import FeaturedProjects from './FeaturedProjects';
 
 const url='https://course-api.com/react-tabs-project'
 
@@ -33,6 +34,13 @@ const Home = () => {
                 <div className='underline'></div>
             </header>
             {jobs.length > 0 && <Jobs jobs={jobs} />}
+            <div className='featured'>
+            <header className='head4'>
+                Featured Projects
+                <div className='underline'></div>
+            </header>
+            <FeaturedProjects />
+            </div>
         </div>
     )
 }

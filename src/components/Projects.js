@@ -14,6 +14,7 @@ const Project = () => {
                         sx={{ height: 260 }}
                         image='http://getwallpapers.com/wallpaper/full/b/5/0/1025571-cool-backgrounds-for-laptops-2880x1800-for-windows.jpg'
                         title='HTML&CSS'
+                        className='custom-image'
                     />
                     <CardContent>
                         <Typography  gutterBottom variant="h5" className='title' >
@@ -43,6 +44,7 @@ const Project = () => {
                         sx={{ height: 260 }}
                         image='https://www.freelogoservices.com/blog/wp-content/uploads/laptop-header-picture-id910806154.jpg'
                         title='ANGULAR'
+                        className='custom-image'
                     />
                     <CardContent>
                         <Typography  gutterBottom variant="h5" className='title' >
@@ -68,6 +70,7 @@ const Project = () => {
                         sx={{ height: 260 }}
                         image='https://www.traverse-events.com/blog/wp-content/uploads/2018/09/laptop-and-coffee-min-1024x683.jpg'
                         title='REACT'
+                        className='custom-image'
                     />
                     <CardContent>
                         <Typography  gutterBottom variant="h5" className='title' >
@@ -94,6 +97,7 @@ const Project = () => {
                         sx={{ height: 260 }}
                         image='https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id832282452?k=6&m=832282452&s=612x612&w=0&h=loZCjflN97l291gseRTHiol3apH8PcPBz6LBjiwub3E='
                         title='GATSY'
+                        className='custom-image'
                     />
                     <CardContent>
                         <Typography  gutterBottom variant="h5" className='title' >
