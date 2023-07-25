@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {AiFillFacebook, AiFillInstagram, AiFillTwitterSquare} from 'react-icons/ai'
+import {AiFillFacebook, AiFillInstagram, AiFillTwitterSquare} from 'react-icons/ai';
 
-const Footer = () => {
-  return (
+const Footer: React.FC = () => {
+    return (
         <footer>
             <div>
                 <div className='footer-links'>

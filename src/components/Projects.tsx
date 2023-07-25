@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 
-const Project = () => {
+const Projects:React.FC = () => {
     return (
         <div className='projects-container'>
             <header className='head4'>
@@ -122,4 +122,4 @@ const Project = () => {
     )
 }
 
-export default Project
+export default Projects

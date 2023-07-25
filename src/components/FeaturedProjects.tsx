@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const FeaturedProjects = () => {
+const FeaturedProjects: React.FC = () => {
 
     let navigate=useNavigate()
     const routheChangeFeatured=() => {
@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
 
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
-    
+
     return (
         <div className='featured-container'>
         <div className='card-container'>

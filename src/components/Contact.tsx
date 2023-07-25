@@ -1,13 +1,24 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
-const Contact = () => {
-    const [text, setText]=useState({
+interface PropsContactText {
+    name: string,
+    email: string,
+    message: string
+}
+
+interface PropsContactErrors {
+    name?: string,
+    email?: string,
+    message?: string
+}
+const Contact: React.FC = () => {
+    const [text, setText]=useState<PropsContactText>({
         name: "",
         email: "",
         message: ""
     })
-    const [errors, setErrors]=useState({})
-    const [isSubmit, setIsSubmit]=useState(false)
+    const [errors, setErrors]=useState<PropsContactErrors>({})
+    const [isSubmit, setIsSubmit]=useState<boolean>(false)
 
     useEffect(() => {
         console.log(errors)
@@ -16,19 +27,19 @@ const Contact = () => {
         }
     },[errors])
 
-    const onFormSubmit=(e) => {
+    const onFormSubmit=(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setErrors(validate(text))
         setIsSubmit(true)
     }
-    const onInputChange=(e) => {
+    const onInputChange=(e: React.ChangeEvent<HTMLInputElement>) => {
         const {name,value}=e.target
         setText({
             ...text,[name]: value
         })     
     }
-    const validate=() => {
-        const errors={}
+    const validate=(formData: PropsContactText) : PropsContactErrors => {
+        const errors: PropsContactErrors={}
         if(!text.name) {
             errors.name="You must enter a name"
         } 
@@ -40,6 +51,7 @@ const Contact = () => {
         }
         return errors
     }
+
     return (
         <div className='contact-container'>
         <article className='container'>

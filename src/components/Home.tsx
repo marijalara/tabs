@@ -7,14 +7,23 @@ import FeaturedProjects from './FeaturedProjects';
 
 const url='https://course-api.com/react-tabs-project'
 
-const Home = () => {
-    const [jobs, setJobs]=useState([])
+export interface PropsHome {
+    id: string,
+    company: string,
+    title: string,
+    dates: string,
+    duties: string[]
+}
+
+const Home: React.FC= () => {
+    const [jobs, setJobs]=useState<PropsHome[]>([])
 
     const fetchJobs=async () => {
-        const response= await axios.get(url)
+        const response=await axios.get(url)
         const jobsData=response.data
         setJobs(jobsData)
     }
+
     useEffect(() => {
         fetchJobs()
     },[])
@@ -33,7 +42,7 @@ const Home = () => {
                 Expierence
                 <div className='underline'></div>
             </header>
-            {jobs.length > 0 && <Jobs jobs={jobs} />}
+            {jobs.length >0 && <Jobs jobs={jobs} />}
             <div className='featured'>
             <header className='head4'>
                 Featured Projects
